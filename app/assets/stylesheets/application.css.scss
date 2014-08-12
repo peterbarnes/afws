@@ -27,6 +27,14 @@ $blue: #1eb4ec;
   font-family: FontAwesome !important;
 }
 
+a {
+  color: $blue !important;
+  &:hover {
+    text-decoration: none !important;
+    color: darken($blue, 20%) !important;
+  }
+}
+
 /* UTILITIES */
 
 .huge-top {
