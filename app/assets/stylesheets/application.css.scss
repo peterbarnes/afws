@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+/* GLOBAL STYLES */
+
+* {
+  font-family: 'Amatic SC' !important;
+}
+
+.fa {
+  font-family: FontAwesome !important;
+}
+
+/* UTILITIES */
+
+.huge-top {
+  margin-top: 250px !important;
+  font-size: 80px !important;
+}
+
+.huge-bottom {
+  margin-bottom: 50px !important;
+}
