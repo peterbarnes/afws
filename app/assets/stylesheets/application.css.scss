@@ -14,6 +14,9 @@
  *= require_self
  */
 
+/* VARIABLES */
+$blue: #1eb4ec;
+
 /* GLOBAL STYLES */
 
 * {
@@ -33,4 +36,8 @@
 
 .huge-bottom {
   margin-bottom: 50px !important;
+}
+
+.blue {
+  color: $blue !important;
 }
