@@ -91,6 +91,16 @@ a {
   font-size: 65px !important;
 }
 
+.lyrics {
+  font-family: 'Roboto' !important;
+  font-weight: 100 !important;
+}
+
+.lyric-box {
+  max-height: 858px;
+  overflow: scroll;
+}
+
 /* BOOTSTRAP OVERRIDES */
 
 .well {
