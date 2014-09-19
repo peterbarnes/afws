@@ -17,6 +17,14 @@
   %body
     = render 'layouts/header'
     .container
+      .row.flash
+        .col-md-8.col-md-offset-2.big-top
+          - flash.each do |key, value|
+            .alert.alert-dismissable
+              %button.close{ type: 'button', data: { dismiss: 'alert' } } 
+                %i.fa.fa-times-circle
+              %h2.no-margin
+                = value
       .row
         = yield
 

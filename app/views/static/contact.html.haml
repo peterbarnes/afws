@@ -1,0 +1,30 @@
+.col-md-8.col-md-offset-2.big-top
+  .well
+    %h1.no-margin.header-font.text-center Follow me
+  .well.clearfix
+    .col-md-6
+      %a{ href: '#' }
+        = image_tag('fb.svg', size: "150x150", class: "center-block img-responsive")
+    .col-md-6
+      %a{ href: '#' }
+        = image_tag('bc.svg', size: "150x150", class: "center-block img-responsive")
+    .col-md-6.big-top
+      %a{ href: '#' }
+        = image_tag('sc.svg', size: "150x150", class: "center-block img-responsive")
+    .col-md-6.big-top
+      %a{ href: '#' }
+        = image_tag('yt.svg', size: "150x150", class: "center-block img-responsive")
+.col-md-8.col-md-offset-2.big-top
+  .well
+    %h2.no-margin.header-font.text-center Email me
+  .well.form
+    = form_tag('/send', method: 'post') do 
+      .form-group.white
+        = text_field_tag(:name, params[:name], class: 'form-control input-lg text-center form-element', placeholder: "Name")
+      .form-group
+        = text_field_tag(:email, params[:email], class: 'form-control input-lg text-center form-element', placeholder: "Email")
+      .form-group
+        = text_area_tag(:body, params[:body], class: 'form-control input-lg form-element', placeholder: "Message", rows: '6')
+      %h1.text-center
+        %button.btn.btn-primary.form-element{ type: 'submit' }
+          Send
