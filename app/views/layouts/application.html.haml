@@ -15,5 +15,8 @@
     %script{ src: '//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' }
     = csrf_meta_tags
   %body
-    = yield
+    = render 'layouts/header'
+    .container
+      .row
+        = yield
 

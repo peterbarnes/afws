@@ -16,11 +16,13 @@
 
 /* VARIABLES */
 $blue: #1eb4ec;
+$text-color: #4f4f4f;
 
 /* GLOBAL STYLES */
 
 * {
   font-family: 'Amatic SC' !important;
+  color: $text-color;
 }
 
 .fa {
@@ -42,10 +44,57 @@ a {
   font-size: 80px !important;
 }
 
+.big-top {
+  margin-top: 30px !important;
+}
+
+.top {
+  margin-top: 30px !important;
+}
+
 .huge-bottom {
   margin-bottom: 50px !important;
 }
 
 .blue {
   color: $blue !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.margin-bottom {
+  margin-top: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+.white {
+  color: white !important;
+}
+
+.navigation {
+  background-color: #4f4f4f !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.nav-link {
+  color: white !important;
+  transition: color 175ms ease-out;
+  &:hover {
+    color: $blue !important;
+  }
+}
+
+.header-font {
+  font-size: 65px !important;
+}
+
+/* BOOTSTRAP OVERRIDES */
+
+.well {
+  border-radius: 0px !important;
+  border: 0px !important;
+  background-color: #4f4f4f !important;
 }

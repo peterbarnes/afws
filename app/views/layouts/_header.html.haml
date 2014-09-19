@@ -1,0 +1,25 @@
+.container-fluid
+  %a{ href: '/' }
+    = image_tag('banner.svg', class: "img-responsive center-block")
+.container-fluid.navigation
+  .container
+    .row
+      .col-md-2
+        %h1.no-margin.text-center.white 
+          = link_to "Home", root_path, class: "nav-link"
+      .col-md-2
+        %h1.no-margin.text-center.white 
+          = link_to "Music", music_path, class: "nav-link"
+      .col-md-2
+        %h1.no-margin.text-center.white
+          = link_to "Lyrics", music_path, class: "nav-link"
+      .col-md-2
+        %h1.no-margin.text-center.white 
+          = link_to "Shows", shows_path, class: "nav-link"
+      .col-md-2
+        %h1.no-margin.text-center.white 
+          = link_to "Contact", contact_path, class: "nav-link"
+      .col-md-2
+        %h1.no-margin.text-center.white 
+          = link_to "About", about_path, class: "nav-link"
+      
